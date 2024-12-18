@@ -7,13 +7,27 @@
   author: [Noa Aarts and Aron Koppe],
 )
 
+#let up = $arrow.t$
+#let down = $arrow.b$
+
 = Initialization of single electron spins
+
+#stack(dir: ltr, spacing: 2mm, image("blackboard.png", height: 30%), image("fermi.png", height: 20%)))
 
 #problem[
 	Consider the case of spin-selective tunneling, sketch the cartoons with how this process works, 
 	starting from the situation where both states are above in terms of the Fermi level?
 ]
 
+We start with the situation where both states are above the fermi level so that any electron leaves the dot.
+#image("1a/start.png", height: 20%)
+After this we lower the fermi energy in the quantum dot until both states are far below the fermi level,
+this then causes an electron to enter the quantum dot.
+#image("1a/lower.png", height: 20%)
+Finally we increase the energy in the quantum dot to the point where the $ket(down)$ state is above the fermi level
+and the down state is below the fermi level.
+#image("1a/final.png", height: 20%)
+This means that there will be tunneling only if the spin in the quantum dot is $ket(down)$, selective spin tunneling.
 
 #problem[
 	What is the difference between these two states?
