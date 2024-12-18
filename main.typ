@@ -33,6 +33,9 @@ This means that there will be tunneling only if the spin in the quantum dot is $
 	What is the difference between these two states?
 ]
 
+The state with the higher fermi level has it's magnetic moment anti-aligned to the quantizing magnetic field,
+so it has more energy.
+
 #problem[
 	hat do you do with your room temperature equipment to lower the energy of these
 	two states?
