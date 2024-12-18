@@ -145,6 +145,11 @@ for 1 milliTesla $I = 4mu$A and for 1 microTesla $I = 4"nA"$
 	reflections), how much heat will this dissipate into our system?
 ]
 
+When a field strength of 1 Tesla is desired,
+the dissipated heat from a current through the resistance is $P = I^2 R = 4"mA"^2 dot 50 = 8"mW"$.
+When the field is 1 milliTesla, the dissipated power will be $P = 8 dot 10^(-10)$W and
+for 1 microTesla $P = 8 dot 10^(-16)$W.
+
 = QPCs
 
 #problem[
