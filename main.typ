@@ -80,6 +80,21 @@ The green line in the image indicates the wire we add to create the field.
 	as in Q1 (a), describe which two things you can do to prevent this.
 ]
 
+The two ways to prevent the electron from tunneling out of the quantum dot are:
+Lowering the energy of the electron a lot and increasing the barrier height.
+#stack(
+	dir: ltr,
+	spacing: 2mm,
+	figure(
+		image("2c/lower.png", width: 50%),
+		caption: [lowering the states]
+	),
+	figure(
+		image("2c/thick.png", width: 50%),
+		caption: [increasing the barrier]
+	),
+)
+
 #problem[
 	For the read-out using a QPC, sketch what other thing needs to be added to the
 	device that was sketched on the chalk board?
