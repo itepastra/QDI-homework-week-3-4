@@ -1,6 +1,5 @@
 #import "@preview/dvdtyp:1.0.0": *
 #import "@preview/physica:0.9.3": *
-#import "@preview/quill:0.5.0" as quill: tequila as tq
 
 #show: dvdtyp.with(
   title: "Homework #2",
@@ -14,6 +13,7 @@
 	Consider the case of spin-selective tunneling, sketch the cartoons with how this process works, 
 	starting from the situation where both states are above in terms of the Fermi level?
 ]
+
 
 #problem[
 	What is the difference between these two states?
@@ -44,11 +44,11 @@
 
 #problem[
 	We make an oscillating field of 10 microTesla. For how long would we need to have
-	this pulse switched on, in order to generate the 81% superposition, described above?
+	this pulse switched on, in order to generate the $81 percent$ superposition, described above?
 ]
 
 #problem[
-	While you apply the oscillating field you don’t want to risk that the electron tunnels
+	While you apply the oscillating field you don't want to risk that the electron tunnels
 	out of the Quantum dot when it (partially) reaches the excited state. With the same cartoons
 	as in Q1 (a), describe which two things you can do to prevent this.
 ]
@@ -74,7 +74,7 @@
 #problem[
 	Our driving wire is at a distance of r = 500 nanometers from our quantum dot.
 	What is the current we need to apply a magnetic field with a strength of 1 Tesla, 1m Tesla and
-	1μ Tesla?
+	$1mu$ Tesla?
 ]
 
 #problem[
@@ -95,7 +95,7 @@
 
 #problem[
 	Modify the gate voltage for the dot in your simulation code and observe how the
-	QPC’s response (current) changes. What conclusions can you draw from this observation?
+	QPC's response (current) changes. What conclusions can you draw from this observation?
 ]
 
 #problem[
@@ -111,29 +111,29 @@
 
 #problem[
 	Summarize the difference between a Yanson point contact and a QPC as described in
-	the paper “Quantum point-contact sensors: State of the art and prospects.”
+	the paper "Quantum point-contact sensors: State of the art and prospects."
 ]
 
 #problem[
-	Interpret Figure 5.B from the paper “Graphene quantum point contact transistor for
-	DNA sensing.” Include a labeled coordinate system on the figure.
+	Interpret Figure 5.B from the paper "Graphene quantum point contact transistor for
+	DNA sensing." Include a labeled coordinate system on the figure.
 ]
 
 #problem[
-	Explain Figures 2.a-d from the paper “Microscopic origin of the ‘0.7-anomaly’ in
-	quantum point contacts.”
+	Explain Figures 2.a-d from the paper "Microscopic origin of the '0.7-anomaly' in
+	quantum point contacts."
 ]
 
 #problem[
 	Provide a brief description of atomic force microscopy (AFM). Would the fabrication
-	method in “Fabrication of quantum point contacts by engraving GaAs/AlGaAs heterostructures
-	with a diamond tip” work for an InAs-based or Si/SiGe heterostructure platform? Justify your
+	method in "Fabrication of quantum point contacts by engraving GaAs/AlGaAs heterostructures
+	with a diamond tip" work for an InAs-based or Si/SiGe heterostructure platform? Justify your
 	answer.
 ]
 
 #problem[
-	The paper “Statistical evaluation of 571 GaAs quantum point contact transistors
-	showing the 0.7 anomaly in quantized conductance using cryogenic on-chip multiplexing” reports
+	The paper "Statistical evaluation of 571 GaAs quantum point contact transistors
+	showing the 0.7 anomaly in quantized conductance using cryogenic on-chip multiplexing" reports
 	QPCs formed with GaAs heterostructures. Would it be worthwhile to replicate this experiment
 	on an InAs-based or Si/SiGe heterostructure platform? Why or why not?
 ]
