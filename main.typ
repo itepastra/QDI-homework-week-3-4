@@ -21,13 +21,10 @@
 
 We start with the situation where both states are above the fermi level so that any electron leaves the dot.
 #image("1a/start.png", height: 20%)
-After this we lower the fermi energy in the quantum dot until both states are far below the fermi level,
-this then causes an electron to enter the quantum dot.
-#image("1a/lower.png", height: 20%)
-Finally we increase the energy in the quantum dot to the point where the $ket(down)$ state is above the fermi level
-and the down state is below the fermi level.
+We lower the levels of the dot to a point where the lower state is below the fermi level and the upper state above
+the fermi level.
 #image("1a/final.png", height: 20%)
-This means that there will be tunneling only if the spin in the quantum dot is $ket(down)$, selective spin tunneling.
+An electron can now only tunnel into the lower energy state.
 
 #problem[
 	What is the difference between these two states?
