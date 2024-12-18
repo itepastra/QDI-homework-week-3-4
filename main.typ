@@ -65,6 +65,10 @@ it you can see whether the qubit contains an electron since the current increase
 	sketched on the chalkboard (Q1) to achieve this?
 ]
 
+To create an oscillating field we can add a wire next to the quantum dot.
+#image("2a.png")
+The green line in the image indicates the wire we add to create the field.
+
 #problem[
 	We make an oscillating field of 10 microTesla. For how long would we need to have
 	this pulse switched on, in order to generate the $81 percent$ superposition, described above?
