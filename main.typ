@@ -41,6 +41,9 @@ so it has more energy.
 	two states?
 ]
 
+To lower the energy of the states using the room temperature equipment, you need to lower the potential in the dot,
+I.E. make it less negative. To achieve this the voltage of the plunger should be increased. While the tunneling gates
+need to be lowered slightly so the tunneling rate stays constant.
 
 #problem[
 	List a benefit and downside to initialization of single electron spins using relaxation
