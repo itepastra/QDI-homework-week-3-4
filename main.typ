@@ -135,6 +135,11 @@ oscillate as close as possible to $omega_L$.
 	$1mu$ Tesla?
 ]
 
+Assuming the driving wire is much longer than 500 nanometers, 
+$B = (mu_0 I)/(2 pi R)$, where $R = 500"nm" = 5 dot 10^-7$m.
+This means that $B = I / 0.004$. to get the current necessary for 1 tesla, $1 = I/0.004 -> I = 4"mA"$.
+for 1 milliTesla $I = 4mu$A and for 1 microTesla $I = 4"nA"$
+
 #problem[
 	this current is running through a 50 Ohm wire (a value that people like to avoid
 	reflections), how much heat will this dissipate into our system?
