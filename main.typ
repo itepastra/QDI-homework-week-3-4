@@ -125,6 +125,10 @@ current does not change, the qubit was in state $ket(0)$.
 	oscillate?
 ]
 
+The frequency that the magnetic field should oscillate at depends on the quantizing magnetic field $B$.
+This field will determine the larmor-frequency $omega_L$ of the quantum dot. The driving field should
+oscillate as close as possible to $omega_L$.
+
 #problem[
 	Our driving wire is at a distance of r = 500 nanometers from our quantum dot.
 	What is the current we need to apply a magnetic field with a strength of 1 Tesla, 1m Tesla and
