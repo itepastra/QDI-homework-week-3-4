@@ -20,10 +20,10 @@
 ]
 
 We start with the situation where both states are above the fermi level so that any electron leaves the dot.
-#image("1a/start.png", height: 20%)
+#figure(image("1a/final.png", height: 20%)) <above-fermi>
 We lower the levels of the dot to a point where the lower state is below the fermi level and the upper state above
 the fermi level.
-#image("1a/final.png", height: 20%)
+#figure(image("1a/final.png", height: 20%)) <around-fermi>
 An electron can now only tunnel into the lower energy state.
 
 #problem[
@@ -111,6 +111,11 @@ small channel on the right side. This makes it a QPC.
 	Use the cartoons to describe how you would read out the final qubit state. What do
 	you expect for the current in the QPC?
 ]
+
+To read out the final qubit state we need to move the states back around the fermi level like in @around-fermi.
+We then start reading the current through the QPC, if we notice it drops the qubit was in the exited state 
+and tunneled back to the reservoir. If the electron does not leave the quantum dot, and therefore the measured
+current does not change, the qubit was in state $ket(0)$.
 
 = Magnetic field strength and current
 
