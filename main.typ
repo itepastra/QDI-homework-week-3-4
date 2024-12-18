@@ -55,6 +55,9 @@ long time until the dot has relaxed to the ground state for certain.
 	selective tunneling? What is actually measured?
 ]
 
+To measure spin-selective tunneling a Quantum Point Contact can be added, if you measure the current through
+it you can see whether the qubit contains an electron since the current increases if an electron is present.
+
 = Single gate operation
 
 #problem[
