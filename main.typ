@@ -187,6 +187,18 @@ for 1 microTesla $P = 8 dot 10^(-16)$W.
 	DNA sensing." Include a labeled coordinate system on the figure.
 ]
 
+#figure(
+	image("5b/paperfig.png", width: 60%),
+	caption: [Figure 5.B from "Graphene quantum point contact transistor for DNA sensing."]
+)
+
+This figure describes the potential from a dna strand going through a nanostrip of graphene. 
+The eight pictures (A,B,C,D,E,D',C',B') are each of the DNA strand being fed slightly further through the nanostrip.
+For each position of the DNA strand they simulated what the potential at each point would be.
+The strip would be in the zone where there aren't any visible color differences, but like a QPC,
+the different positions of the charges make it possible to measure differences in resistance
+and therefore the "axis" of the DNA.
+
 #problem[
 	Explain Figures 2.a-d from the paper "Microscopic origin of the '0.7-anomaly' in
 	quantum point contacts."
