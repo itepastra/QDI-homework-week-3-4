@@ -66,7 +66,10 @@ it you can see whether the qubit contains an electron since the current increase
 ]
 
 To create an oscillating field we can add a wire next to the quantum dot.
-#image("2a.png")
+#figure(
+	image("2a.png"),
+	caption: [quantum dot gate layout],
+) <qdot>
 The green line in the image indicates the wire we add to create the field.
 
 #problem[
@@ -99,6 +102,10 @@ Lowering the energy of the electron a lot and increasing the barrier height.
 	For the read-out using a QPC, sketch what other thing needs to be added to the
 	device that was sketched on the chalk board?
 ]
+
+For read-out using a QPC the quantum point contact needs to be added, we can see it in @qdot.
+On the right side, the part with the blue fill and black border needed to be modified to have the
+small channel on the right side. This makes it a QPC.
 
 #problem[
 	Use the cartoons to describe how you would read out the final qubit state. What do
