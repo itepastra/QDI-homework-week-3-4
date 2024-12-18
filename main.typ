@@ -46,6 +46,10 @@ need to be lowered slightly so the tunneling rate stays constant.
 	to ground state.
 ]
 
+A benefit of initialising a single electron spin using relaxation is that you don't need to be as accurate
+with the potential in the quantum dot. A drawback is that you need to wait for a (possibly very) 
+long time until the dot has relaxed to the ground state for certain.
+
 #problem[
 	What needs to be added to the device in order to measure whether there is spin
 	selective tunneling? What is actually measured?
