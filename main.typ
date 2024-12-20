@@ -156,24 +156,68 @@ for 1 microTesla $P = 8 dot 10^(-16)$W.
 	Sketch and label the basic working principle of a Quantum Point Contact (QPC).
 ]
 
+Insert image here
+
 #problem[
 	Capacitance matrices were either defined or created for dots and gates. Explain, in
 	your own words, the role of capacitance matrices in defining the QPC-dot interaction.
 ]
+
+We have the dot-dot matrix and the dot-gate matrix. In the dot-dot matrix, the ith row
+and jth column element corresponds to the capacitance between the ith quantum dot and the
+jth quantum dot. In the dot-gate matrix, the ith row and jth column corresponds to the
+capacitance between the ith gate and the jth column. That capacitance is important for
+getting the voltages and how likely charge will be stuck in-between the dots and gates.
+As you notice from my given definition, the dots have a capacitance with themselves,
+which means charge can get stuck in there as well. We need these matrices and voltages
+to know the charge.
 
 #problem[
 	Modify the gate voltage for the dot in your simulation code and observe how the
 	QPC's response (current) changes. What conclusions can you draw from this observation?
 ]
 
+#figure(
+	image("4/Current_events.png"),
+	caption: [current in a 1 quantum dot problem, with varying gate voltages.],
+)
+
+It is only a select amount of voltages that allow current. There are discrete steps for
+both voltages they need to be in to allow current to happen.
+
 #problem[
 	Illustrate and explain the process of single-shot electron spin readout using a QPC
 ]
+
+Insert image here
+
+By adjusting voltages, you adjust the Fermi energy such that the tunneling happens with
+just the spin-up particle staying on the right side (quantum dot). This way, you make sure
+that one spin-up particle is the only particle you can measure, as the other particles require
+a higher energy and tunnel out.
 
 #problem[
 	Based on your experience, outline three advantages and three disadvantages of using
 	QDSim to simulate Quantum Dot devices.
 ]
+
+Disadvantages:
+
+1. Perfect circumstances are assumed where reality begs to differ. Imperfections need to be
+added manually and it is complex to do so.
+2. Theory behind what is simulated needs to be known beforehand. It is hard to get an explanation
+of what everything means (I tried to search for it many times).
+3. The color plots I get are very pixellated, likely due to limited resolution over which voltage
+can vary. What if I want more variation? It is hard editing in those nuances.
+
+Advantages:
+
+1. Instead of performing an experiment with zero expectations, there is at least a simulation to test
+your theory beforehand.
+2. Interactions you were not expecting at first are now visualized and shown in outputs like the
+capacitance matrices.
+3. You can simulate circumstances that do not yet exist in hardware, making you able to see whether such
+a piece of hardware would work in real life.
 
 = Workgroup papers
 
