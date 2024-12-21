@@ -156,7 +156,10 @@ for 1 microTesla $P = 8 dot 10^(-16)$W.
 	Sketch and label the basic working principle of a Quantum Point Contact (QPC).
 ]
 
-Insert image here
+#figure(
+	image("4/qpc.jpg"),
+	caption: [current in a 1 quantum dot problem, with varying gate voltages.],
+)
 
 #problem[
 	Capacitance matrices were either defined or created for dots and gates. Explain, in
@@ -189,7 +192,10 @@ both voltages they need to be in to allow current to happen.
 	Illustrate and explain the process of single-shot electron spin readout using a QPC
 ]
 
-Insert image here
+#figure(
+	image("4/spin_up.png"),
+	caption: [current in a 1 quantum dot problem, with varying gate voltages.],
+)
 
 By adjusting voltages, you adjust the Fermi energy such that the tunneling happens with
 just the spin-up particle staying on the right side (quantum dot). This way, you make sure
@@ -226,6 +232,10 @@ a piece of hardware would work in real life.
 	the paper "Quantum point-contact sensors: State of the art and prospects."
 ]
 
+A QPC is an artificial hole an electron can fill in after which current measuring measure if an electron
+fills the hole. Yanson point contact has a narrow gap where an electron can be and can bridge between two
+sides.
+
 #problem[
 	Interpret Figure 5.B from the paper "Graphene quantum point contact transistor for
 	DNA sensing." Include a labeled coordinate system on the figure.
@@ -248,6 +258,18 @@ and therefore the "axis" of the DNA.
 	quantum point contacts."
 ]
 
+The figures literally show the total conductance of a QPC in figures a and b, with the top figure being total
+conductance and the figures below standing for conductance for spin-up and spin-down qubits. This is plotted
+against the voltage applied, with every different colored line standing for a different magnetic field strength.
+The grey lines in the top figure show low-energy scale as voltage increases with the two different values of
+interaction. Inside the middle figure of a,b, there is another figure where the amount of shots is plotted against
+conductance. The different colored lines are again different magnetic field strengths. All plots of figures a,b assume
+~T = 0. In figures c and d I see the top figure having a different minimum energy than figures a and b and figure d
+plots some lines against another type of energy.
+
+Bottom line of figures a and b is that the biggest magnetic strength does not guarantee the best conductance, nor does
+it help with number of shots succeeding. c and d test some properties in other slightly different situations.
+
 #problem[
 	Provide a brief description of atomic force microscopy (AFM). Would the fabrication
 	method in "Fabrication of quantum point contacts by engraving GaAs/AlGaAs heterostructures
@@ -255,9 +277,18 @@ and therefore the "axis" of the DNA.
 	answer.
 ]
 
+The removal of materials with a tip works in a way such that a force is applied on the material. It depends on the material
+the tip is used on whether the force applied makes the result precise or whether the space that is removed is too wide.
+The experiment needs to be repeated on the heterostructures this question gives as examples to know whether it would
+actually work.
+
 #problem[
 	The paper "Statistical evaluation of 571 GaAs quantum point contact transistors
 	showing the 0.7 anomaly in quantized conductance using cryogenic on-chip multiplexing" reports
 	QPCs formed with GaAs heterostructures. Would it be worthwhile to replicate this experiment
 	on an InAs-based or Si/SiGe heterostructure platform? Why or why not?
 ]
+
+It would be worthwile to test it with other materials, since the Van Hove model has material-dependent properties
+you could test for the other materials as well. Confirms the case that Van Hove model is causing the 0.7
+anomaly a bit better.
