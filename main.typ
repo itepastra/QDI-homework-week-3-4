@@ -58,6 +58,7 @@ long time until the dot has relaxed to the ground state for certain.
 To measure spin-selective tunneling a Quantum Point Contact can be added, if you measure the current through
 it you can see whether the qubit contains an electron since the current increases if an electron is present.
 
+#pagebreak()
 = Single gate operation
 
 #problem[
@@ -117,6 +118,7 @@ We then start reading the current through the QPC, if we notice it drops the qub
 and tunneled back to the reservoir. If the electron does not leave the quantum dot, and therefore the measured
 current does not change, the qubit was in state $ket(0)$.
 
+#pagebreak()
 = Magnetic field strength and current
 
 #problem[
@@ -150,6 +152,7 @@ the dissipated heat from a current through the resistance is $P = I^2 R = 4"mA"^
 When the field is 1 milliTesla, the dissipated power will be $P = 8 dot 10^(-10)$W and
 for 1 microTesla $P = 8 dot 10^(-16)$W.
 
+#pagebreak()
 = QPCs
 
 #problem[
@@ -225,6 +228,7 @@ capacitance matrices.
 3. You can simulate circumstances that do not yet exist in hardware, making you able to see whether such
 a piece of hardware would work in real life.
 
+#pagebreak()
 = Workgroup papers
 
 #problem[
