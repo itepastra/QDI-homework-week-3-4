@@ -58,7 +58,7 @@ long time until the dot has relaxed to the ground state for certain.
 ]
 
 To measure spin-selective tunneling a Quantum Point Contact can be added, if you measure the current through
-it you can see whether the qubit contains an electron since the current increases if an electron is present.
+it you can see whether the qubit contains an electron since the current decreases if an electron is present.
 
 #pagebreak()
 = Single gate operation
