@@ -80,6 +80,12 @@ The green line in the image indicates the wire we add to create the field.
 	this pulse switched on, in order to generate the $81 percent$ superposition, described above?
 ]
 
+These rabi-oscillations will make the qubit precess around the Y-axis with a larmor frequency $omega_L$.
+To calculate this frequency we use the gyromagnetic ratio of the electron in the dot $gamma_e approx 1.760 times 10^11 "rad"/(s T)$.
+Since we have a field of 10 microTesla $omega_L = 1.760 times 10^5 "rad"/s$. 
+To get to the 81% superposition we need to rotate the qubit $theta = cos^(-1)(sqrt(0.81)) approx 0.451 "rad"$.
+Therefore the time we need to drive the qubit is $theta / omega_L = 0.451 / (1.760 times 10^5) = 2.56 mu$s.
+
 #problem[
 	While you apply the oscillating field you don't want to risk that the electron tunnels
 	out of the Quantum dot when it (partially) reaches the excited state. With the same cartoons
