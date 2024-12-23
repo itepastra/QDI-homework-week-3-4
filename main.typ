@@ -156,24 +156,74 @@ for 1 microTesla $P = 8 dot 10^(-16)$W.
 	Sketch and label the basic working principle of a Quantum Point Contact (QPC).
 ]
 
+#figure(
+	image("4/qpc.jpg"),
+	caption: [current in a 1 quantum dot problem, with varying gate voltages.],
+)
+
 #problem[
 	Capacitance matrices were either defined or created for dots and gates. Explain, in
 	your own words, the role of capacitance matrices in defining the QPC-dot interaction.
 ]
+
+We have the dot-dot matrix and the dot-gate matrix. In the dot-dot matrix, the ith row
+and jth column element corresponds to the capacitance between the ith quantum dot and the
+jth quantum dot. In the dot-gate matrix, the ith row and jth column corresponds to the
+capacitance between the ith gate and the jth column. That capacitance is important for
+getting the voltages and how likely charge will be stuck in-between the dots and gates.
+As you notice from my given definition, the dots have a capacitance with themselves,
+which means charge can get stuck in there as well. We need these matrices and voltages
+to know the charge.
 
 #problem[
 	Modify the gate voltage for the dot in your simulation code and observe how the
 	QPC's response (current) changes. What conclusions can you draw from this observation?
 ]
 
+#figure(
+	image("4/Current_events.png"),
+	caption: [current in a 1 quantum dot problem, with varying gate voltages.],
+)
+
+It is only a select amount of voltages that allow current. There are discrete steps for
+both voltages they need to be in to allow current to happen.
+
 #problem[
 	Illustrate and explain the process of single-shot electron spin readout using a QPC
 ]
+
+#figure(
+	image("4/spin_up.png"),
+	caption: [current in a 1 quantum dot problem, with varying gate voltages.],
+)
+
+By adjusting voltages, you adjust the Fermi energy such that the tunneling happens with
+just the spin-up particle staying on the right side (quantum dot). This way, you make sure
+that one spin-up particle is the only particle you can measure, as the other particles require
+a higher energy and tunnel out.
 
 #problem[
 	Based on your experience, outline three advantages and three disadvantages of using
 	QDSim to simulate Quantum Dot devices.
 ]
+
+Disadvantages:
+
+1. Perfect circumstances are assumed where reality begs to differ. Imperfections need to be
+added manually and it is complex to do so.
+2. Theory behind what is simulated needs to be known beforehand. It is hard to get an explanation
+of what everything means (I tried to search for it many times).
+3. The color plots I get are very pixellated, likely due to limited resolution over which voltage
+can vary. What if I want more variation? It is hard editing in those nuances.
+
+Advantages:
+
+1. Instead of performing an experiment with zero expectations, there is at least a simulation to test
+your theory beforehand.
+2. Interactions you were not expecting at first are now visualized and shown in outputs like the
+capacitance matrices.
+3. You can simulate circumstances that do not yet exist in hardware, making you able to see whether such
+a piece of hardware would work in real life.
 
 = Workgroup papers
 
@@ -181,6 +231,10 @@ for 1 microTesla $P = 8 dot 10^(-16)$W.
 	Summarize the difference between a Yanson point contact and a QPC as described in
 	the paper "Quantum point-contact sensors: State of the art and prospects."
 ]
+
+A QPC is an artificial hole an electron can fill in after which current measuring measure if an electron
+fills the hole. Yanson point contact has a narrow gap where an electron can be and can bridge between two
+sides.
 
 #problem[
 	Interpret Figure 5.B from the paper "Graphene quantum point contact transistor for
@@ -204,6 +258,18 @@ and therefore the "axis" of the DNA.
 	quantum point contacts."
 ]
 
+The figures literally show the total conductance of a QPC in figures a and b, with the top figure being total
+conductance and the figures below standing for conductance for spin-up and spin-down qubits. This is plotted
+against the voltage applied, with every different colored line standing for a different magnetic field strength.
+The grey lines in the top figure show low-energy scale as voltage increases with the two different values of
+interaction. Inside the middle figure of a,b, there is another figure where the amount of shots is plotted against
+conductance. The different colored lines are again different magnetic field strengths. All plots of figures a,b assume
+~T = 0. In figures c and d I see the top figure having a different minimum energy than figures a and b and figure d
+plots some lines against another type of energy.
+
+Bottom line of figures a and b is that the biggest magnetic strength does not guarantee the best conductance, nor does
+it help with number of shots succeeding. c and d test some properties in other slightly different situations.
+
 #problem[
 	Provide a brief description of atomic force microscopy (AFM). Would the fabrication
 	method in "Fabrication of quantum point contacts by engraving GaAs/AlGaAs heterostructures
@@ -211,9 +277,18 @@ and therefore the "axis" of the DNA.
 	answer.
 ]
 
+The removal of materials with a tip works in a way such that a force is applied on the material. It depends on the material
+the tip is used on whether the force applied makes the result precise or whether the space that is removed is too wide.
+The experiment needs to be repeated on the heterostructures this question gives as examples to know whether it would
+actually work.
+
 #problem[
 	The paper "Statistical evaluation of 571 GaAs quantum point contact transistors
 	showing the 0.7 anomaly in quantized conductance using cryogenic on-chip multiplexing" reports
 	QPCs formed with GaAs heterostructures. Would it be worthwhile to replicate this experiment
 	on an InAs-based or Si/SiGe heterostructure platform? Why or why not?
 ]
+
+It would be worthwile to test it with other materials, since the Van Hove model has material-dependent properties
+you could test for the other materials as well. Confirms the case that Van Hove model is causing the 0.7
+anomaly a bit better.
