@@ -130,7 +130,7 @@ current does not change, the qubit was in state $ket(0)$.
 = Magnetic field strength and current
 
 #problem[
-	In class we learned, we can drive our qubit from ground state to excited state and
+	In class we learned we can drive our qubit from ground state to excited state and
 	back by applying an oscillating magnetic field. At what frequency should the magnetic field
 	oscillate?
 ]
