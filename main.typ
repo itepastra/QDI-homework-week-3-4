@@ -10,9 +10,11 @@
 #let up = $arrow.t$
 #let down = $arrow.b$
 
+#outline()
+
 = Initialization of single electron spins
 
-#stack(dir: ltr, spacing: 2mm, image("blackboard.png", height: 30%), image("fermi.png", height: 20%)))
+#stack(dir: ltr, spacing: 2mm, image("blackboard.png", height: 30%), image("fermi.png", height: 20%))
 
 #problem[
 	Consider the case of spin-selective tunneling, sketch the cartoons with how this process works, 
@@ -56,8 +58,9 @@ long time until the dot has relaxed to the ground state for certain.
 ]
 
 To measure spin-selective tunneling a Quantum Point Contact can be added, if you measure the current through
-it you can see whether the qubit contains an electron since the current increases if an electron is present.
+it you can see whether the qubit contains an electron since the current decreases if an electron is present.
 
+#pagebreak()
 = Single gate operation
 
 #problem[
@@ -76,6 +79,12 @@ The green line in the image indicates the wire we add to create the field.
 	We make an oscillating field of 10 microTesla. For how long would we need to have
 	this pulse switched on, in order to generate the $81 percent$ superposition, described above?
 ]
+
+These rabi-oscillations will make the qubit precess around the Y-axis with a larmor frequency $omega_L$.
+To calculate this frequency we use the gyromagnetic ratio of the electron in the dot $gamma_e approx 1.760 times 10^11 "rad"/(s T)$.
+Since we have a field of 10 microTesla $omega_L = 1.760 times 10^5 "rad"/s$. 
+To get to the 81% superposition we need to rotate the qubit $theta = cos^(-1)(sqrt(0.81)) approx 0.451 "rad"$.
+Therefore the time we need to drive the qubit is $theta / omega_L = 0.451 / (1.760 times 10^5) = 2.56 mu$s.
 
 #problem[
 	While you apply the oscillating field you don't want to risk that the electron tunnels
@@ -117,10 +126,11 @@ We then start reading the current through the QPC, if we notice it drops the qub
 and tunneled back to the reservoir. If the electron does not leave the quantum dot, and therefore the measured
 current does not change, the qubit was in state $ket(0)$.
 
+#pagebreak()
 = Magnetic field strength and current
 
 #problem[
-	In class we learned, we can drive our qubit from ground state to excited state and
+	In class we learned we can drive our qubit from ground state to excited state and
 	back by applying an oscillating magnetic field. At what frequency should the magnetic field
 	oscillate?
 ]
@@ -150,6 +160,7 @@ the dissipated heat from a current through the resistance is $P = I^2 R = 4"mA"^
 When the field is 1 milliTesla, the dissipated power will be $P = 8 dot 10^(-10)$W and
 for 1 microTesla $P = 8 dot 10^(-16)$W.
 
+#pagebreak()
 = QPCs
 
 #problem[
@@ -193,7 +204,7 @@ both voltages they need to be in to allow current to happen.
 ]
 
 #figure(
-	image("4/spin_up.png"),
+	image("4/spin_up.jpg"),
 	caption: [current in a 1 quantum dot problem, with varying gate voltages.],
 )
 
@@ -225,6 +236,7 @@ capacitance matrices.
 3. You can simulate circumstances that do not yet exist in hardware, making you able to see whether such
 a piece of hardware would work in real life.
 
+#pagebreak()
 = Workgroup papers
 
 #problem[
