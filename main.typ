@@ -193,7 +193,7 @@ both voltages they need to be in to allow current to happen.
 ]
 
 #figure(
-	image("4/spin_up.png"),
+	image("4/spin_up.jpg"),
 	caption: [current in a 1 quantum dot problem, with varying gate voltages.],
 )
 
