@@ -14,7 +14,7 @@
 
 = Initialization of single electron spins
 
-#stack(dir: ltr, spacing: 2mm, image("blackboard.png", height: 30%), image("fermi.png", height: 20%)))
+#stack(dir: ltr, spacing: 2mm, image("blackboard.png", height: 30%), image("fermi.png", height: 20%))
 
 #problem[
 	Consider the case of spin-selective tunneling, sketch the cartoons with how this process works, 
