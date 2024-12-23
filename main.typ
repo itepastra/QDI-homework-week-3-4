@@ -10,6 +10,8 @@
 #let up = $arrow.t$
 #let down = $arrow.b$
 
+#outline()
+
 = Initialization of single electron spins
 
 #stack(dir: ltr, spacing: 2mm, image("blackboard.png", height: 30%), image("fermi.png", height: 20%)))
